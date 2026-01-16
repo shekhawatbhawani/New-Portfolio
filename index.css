@@ -10,11 +10,6 @@ body {
     color: #333;
 }
 
-
-
-
-
-
 #about,
 #hero,
 #skills,
@@ -24,18 +19,14 @@ body {
     scroll-margin-top: 80px;
 }
 
-
-
 /* Navigation Bar Styles ************************************************************************ */
-
 .navbar{
     position:sticky;
     top: 0;
     left: 0;
     width: 100%;
- 
+    z-index: 999;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,15 +37,12 @@ nav {
 
 }
 
-
 nav .logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
 }
-
-
 nav .logo .img {
     width: 50px;
     height: 50px;
@@ -77,7 +65,6 @@ nav .logo h1 {
     font-family: initial;
     cursor: pointer;
 }
-
 nav ul {
     display: flex;
     list-style: none;
@@ -87,71 +74,55 @@ nav ul {
     font-size: larger;
     padding-top: 0.4rem;
 }
-
 nav ul li {
     padding: 0.3rem;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #000000;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     padding: 1rem;
-
 }
 
 nav ul li a:hover {
     background-color: #ea4a4a;
     color: #ffffff;
 }
-
-
 nav .menu-icon {
     display: none;
     font-size: 28px;
     cursor: pointer;
     margin-left: auto;
 }
-
 .toggle-nav{
     display: none;
 }
 
-
-
 /* Responsive Navbar Styling ................*/
-
 @media (max-width: 950px) {
     nav ul {
         gap: 0.5rem;
     }
-
     nav ul li {
         text-align: center;
         width: 100%;
     }
 }
 
-
 @media (max-width:750px) {
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
     }
-
     nav ul {
         display: none;
         flex-direction: column;
     }
-
     nav .menu-icon {
         display: block;
     }
-
     .toggle-nav{
         background-color: #ffffff;
         box-shadow: 0 2px 4px rgba(255, 3, 3, 0.1);
@@ -181,14 +152,9 @@ nav .menu-icon {
         transition: background-color 0.3s, color 0.3s;
         padding: 1rem;
     }
-
 }
 
-
-
 /* Hero Section Styles ************************************************************************  */
-
-
 
 .home-main-box{
     display: flex;
@@ -197,27 +163,19 @@ nav .menu-icon {
     height: 90vh;
     background-color: #ffffff;
     padding: 5rem 1rem  3rem;
-    /* esa margin padding laga o top me jis se home section nav bottom aaye nav ke nichu nhi by defalult  */
-    
+    /* esa margin padding laga o top me jis se home section nav bottom aaye nav ke nichu nhi by defalult  */    
 }
-
-
 .home-content-box{
     flex: 2;
-    padding: 2rem;
-   
+    padding: 2rem;  
 }
-
-
 .home-content-box .green-bol{
     width: 13px;
     height: 13px;
     background-color: green;
     display: inline-block;
     border-radius: 50%;
-
 }
-
 .home-content-box h1{
     font-size: 3rem;
     margin: 1rem 0;
@@ -232,7 +190,6 @@ nav .menu-icon {
     line-height: 1.6;
     color: #666666;
 }
-
 .home-content-box button{
     display: inline-block;
     margin-top: 1.5rem;
@@ -245,22 +202,16 @@ nav .menu-icon {
     text-decoration: none;
     transition: background-color 0.3s;
 }
-
-
 .home-content-box button:hover{
     background-color: #c43b3b;
     cursor: pointer;
-
 }
-
-
 .home-img-box{
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .home-img-box img{
     width: 22rem;
     height: 30rem;
@@ -268,10 +219,7 @@ nav .menu-icon {
     object-fit: cover;
     border: 5px solid #ea4a4a;
 }
-
 /* responsive styles ................ */
-
-
 @media (max-width: 950px) {
     .home-main-box{
         flex-direction: column;
@@ -279,11 +227,9 @@ nav .menu-icon {
         height: auto;
         padding: 2rem 1rem;
     }
-
     .home-content-box{
         padding: 1rem;
     }
-
     .home-content-box h1{
         font-size: 2.5rem;
     }
@@ -291,22 +237,16 @@ nav .menu-icon {
         font-size: 1.5rem;
     }
 }
-
-
 /* About Section Styles ************************************************************************  */
-
-
 .about-section{
     padding: 2rem 2rem;
     background-color: #ffffff;
     margin: 2rem 0rem;
 }
-
 .about-header{
     text-align: center;
     margin-bottom: 4rem;
 }
-
 .about-header h1{
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -317,8 +257,6 @@ nav .menu-icon {
     text-decoration-thickness: 5px;
       padding: 1rem 0rem 2rem 2rem;
 }
-
-
 .about-main{
     display: flex;
     justify-content: center;
@@ -327,62 +265,48 @@ nav .menu-icon {
     /* flex-wrap: wrap; */
     padding: 0rem 1rem;
 }
-
-
 .about-img-box{
     /* flex: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .about-img-box img{
     width: 20rem;
     height: auto;
     border-radius: 20%;
     object-fit: cover;
     border: 5px solid #f25454;
-
 }
-
 .about-main-content{
     flex: 2;
     padding: 1rem;
-
-
 }
-
 .about-main-content h1{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 .about-main-content p{
     font-size: 1.2rem;
     line-height: 1.6;
     color: #666666;
 }
-
 .about-per-info{
     display: flex;
     justify-content: space-between;
     margin: 1.5rem 0;
     align-items: center;
     flex-wrap: wrap;
-
 }
-
 .info-main{
     display: flex;
     flex-direction: column;
     align-items: start;
-    
+   
 }
-
 #info{
     text-align: start;
 }
-
 .about-per-info .arrow{
     width: 8px;
     height: 8px;
@@ -391,60 +315,40 @@ nav .menu-icon {
     display: inline-block;
     margin-right: 8px;
     margin-bottom: 0.2rem;
-
 }
-
 .span-bold{
     font-weight: bold;
 }
-
 .about-per-info .info{
     padding: 0.5rem ;
     margin: 0.2rem;
 }
-
-
-
-
 /* Responsive Styles About section ........>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
 @media (max-width: 950px) {
     .about-main{
         flex-direction: column;
         text-align: center;
     }
-
     .about-img-box img{
         width: 15rem;
         height: auto;
     }
-
     .about-main-content h1{
         font-size: 1.8rem;
     }
-
     .about-main-content p{
         font-size: 1.1rem;
     }
 }
-
-
-
-
 /* Skill section styles  */
-
-
 /* ===============================
    SKILLS – MODERN WHITE UI
    =============================== */
-
 .skills-section {
   padding: 70px 20px;
   background: #f9fafb;
   color: #111827;
 }
-
 .skills-title {
   text-align: center;
   margin-top: 0;
@@ -453,7 +357,6 @@ nav .menu-icon {
   margin-bottom: 50px;
   letter-spacing: 1px;
 }
-
 .skills-container {
   max-width: 900px;
   margin: auto;
@@ -461,8 +364,6 @@ nav .menu-icon {
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
 }
-
-
 .skill {
   background: #ffffff;
   padding: 22px 24px;
@@ -470,12 +371,10 @@ nav .menu-icon {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .skill:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
-
 .skill span {
   display: flex;
   justify-content: space-between;
@@ -484,7 +383,6 @@ nav .menu-icon {
   margin-bottom: 10px;
   color: #374151;
 }
-
 .progress-bar {
   width: 100%;
   height: 10px;
@@ -492,12 +390,9 @@ nav .menu-icon {
   border-radius: 50px;
   overflow: hidden;
 }
-
 .skills-section h1{
-  font-size: 2.5rem;
-  
+  font-size: 2.5rem; 
 }
-
 .progress-bar div {
   height: 100%;
   border-radius: 50px;
@@ -505,27 +400,19 @@ nav .menu-icon {
   transition: width 0.8s ease-in-out;
   font-size: 0;
 }
-
-
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: 1fr;
   }
-
   .skills-title {
     font-size: 26px;
   }
 }
-
-
-
-
 .project .main-container{
     padding: 3rem 1.5rem;
     background-color: #ffffff;
     margin: 3rem 0;
 }
-
 /* Heading */
 .project .main-container h1{
     text-align: center;
@@ -534,7 +421,6 @@ nav .menu-icon {
     font-weight: 700;
     color: #222;
 }
-
 .project .main-container .heading-pera{
     text-align: center;
     padding: 0 2rem 2.5rem;
@@ -543,7 +429,6 @@ nav .menu-icon {
     /* max-width: 700px; */
     margin: auto;
 }
-
 /* Cards container */
 .project .cards-container{
     display: flex;
@@ -553,7 +438,6 @@ nav .menu-icon {
     flex-wrap: wrap;
     padding: 1rem;
 }
-
 /* Card */
 .project .cards-container .card{
     flex: 1;
@@ -567,16 +451,13 @@ nav .menu-icon {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
 .project .cards-container .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
-
 .project .card{
     padding: 1.2rem;
 }
-
 /* Image */
 .project .card .card-img img{
     width: 100%;
@@ -584,14 +465,12 @@ nav .menu-icon {
     object-fit: cover;
     border-radius: 12px;
 }
-
 /* Title */
 .project .card h2{
     font-size: 1.4rem;
     margin-top: 1rem;
     color: #222;
 }
-
 /* Description */
 .project .card p{
     font-size: 0.95rem;
@@ -599,14 +478,12 @@ nav .menu-icon {
     padding: 0.8rem 0 1.2rem;
     line-height: 1.6rem;
 }
-
 /* Buttons */
 .project .card .btns{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
-
 .project .card button{
     flex: 1;
     padding: 0.7rem 1rem;
@@ -618,12 +495,10 @@ nav .menu-icon {
     border: none;
     transition: all 0.3s ease;
 }
-
 .project .card button:hover{
     background: linear-gradient(135deg, #d93c3c, #ff5252);
     transform: scale(1.05);
 }
-
 /* Button link */
 .project .card button a{
     text-decoration: none;
@@ -631,20 +506,12 @@ nav .menu-icon {
     display: block;
     text-align: center;
 }
-
-
-
-
-
-
 /* Services Section Styles */
-
 .service-main-container{
     padding: 3rem 1.5rem;
     background-color: #ffffff;
     margin: 3rem 0;
 }
-
 .service-main-container h1{
     text-align: center;
     padding-bottom: 1rem;
@@ -652,7 +519,6 @@ nav .menu-icon {
     font-weight: 700;
     color: #222;
 }
-
 .service-main-container .para{
     text-align: center;
     padding: 0 2rem 2.5rem;
@@ -661,7 +527,6 @@ nav .menu-icon {
     /* max-width: 700px; */
     margin: auto;
 }
-
 .service-card-container{
     display: flex;
     justify-content: center;
@@ -670,7 +535,6 @@ nav .menu-icon {
     flex-wrap: wrap;
     padding: 1rem;
 }
-
 .service-card-container .service-card{
     flex: 1;
     min-width: 260px;
@@ -683,34 +547,24 @@ nav .menu-icon {
     transition: all 0.3s ease;
     cursor: pointer;
     text-align: center;
-    padding: 2rem 1.5rem;
-    
+    padding: 2rem 1.5rem;   
 }
-
 .service-img-container{
     text-align: center;
     margin-bottom: 1rem;
 }
-
-
 .service-card-container .service-card:hover{
     transform: translateY(-10px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
     /* position: absolute; */
     /* z-index: 0; */
 }
-
-
 /* Contact Section Styles */
-
-
 /* ===== CONTACT SECTION ===== */
 .contact{
     padding: 5rem 1.5rem;
-    background: linear-gradient(135deg, #fdfbfb, #ebedee);
-    
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);   
 }
-
 .contact-main-container{
     max-width: 1200px;
     margin: auto;
@@ -718,9 +572,7 @@ nav .menu-icon {
     grid-template-columns: 1fr 1.2fr;
     gap: 3rem;
     align-items: center;
-  
 }
-
 /* ===== LEFT CONTENT (INFO) ===== */
 .contact-content-container{
     padding: 3rem 2.5rem;
@@ -730,7 +582,6 @@ nav .menu-icon {
     position: relative;
     /* z-index: 1; */
 }
-
 .contact-content-container::before{
     content: "";
     position: absolute;
@@ -741,21 +592,18 @@ nav .menu-icon {
     background: linear-gradient(180deg, #ea4a4a, #ff6a6a);
     border-radius: 10px;
 }
-
 .contact-content-container h2{
     font-size: 2.5rem;
     font-weight: 700;
     color: #222;
     margin-bottom: 1.2rem;
 }
-
 .contact-content-container p{
     font-size: 1.05rem;
     color: #555;
     line-height: 1.8;
     margin-bottom: 1.8rem;
 }
-
 .contact-details p{
     font-size: 1rem;
     color: #333;
@@ -763,7 +611,6 @@ nav .menu-icon {
     padding-left: 1.8rem;
     position: relative;
 }
-
 .contact-details p::before{
     content: "●";
     position: absolute;
@@ -772,17 +619,6 @@ nav .menu-icon {
     font-size: 0.8rem;
     color: #ea4a4a;
 }
-
-/* .contact-extra p{
-    margin-top: 2rem;
-    font-size: 0.95rem;
-    color: #666;
-    background: #ffffff;
-    padding: 1rem 1.2rem;
-    border-left: 4px solid #ea4a4a;
-    border-radius: 6px;
-} */
-
 /* ===== RIGHT FORM ===== */
 .contact-form-container{
     background: #ffffff;
@@ -792,7 +628,6 @@ nav .menu-icon {
     position: relative;
     overflow: hidden;
 }
-
 .contact-form-container::before{
     content: "";
     position: absolute;
@@ -803,13 +638,11 @@ nav .menu-icon {
     background: rgba(234,74,74,0.12);
     border-radius: 50%;
 }
-
 .contact-form-container form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
 }
-
 .contact-form-container input,
 .contact-form-container textarea{
     width: 100%;
@@ -820,12 +653,10 @@ nav .menu-icon {
     background: #f9f9f9;
     transition: 0.3s ease;
 }
-
 .contact-form-container textarea{
     grid-column: 1 / -1;
     resize: none;
 }
-
 .contact-form-container input:focus,
 .contact-form-container textarea:focus{
     outline: none;
@@ -833,7 +664,6 @@ nav .menu-icon {
     background: #ffffff;
     box-shadow: 0 0 0 3px rgba(234,74,74,0.15);
 }
-
 .contact-form-container button{
     grid-column: 1 / -1;
     padding: 1rem;
@@ -846,72 +676,56 @@ nav .menu-icon {
     cursor: pointer;
     transition: all 0.35s ease;
 }
-
 .contact-form-container button:hover{
     transform: translateY(-3px);
     box-shadow: 0 15px 35px rgba(234,74,74,0.35);
 }
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px){
     .contact-main-container{
         grid-template-columns: 1fr;
     }
-
     .contact-content-container{
         text-align: center;
     }
-
     .contact-content-container::before{
         display: none;
     }
-
     .contact-details p{
         padding-left: 0;
     }
-
     .contact-details p::before{
         display: none;
     }
 }
-
 @media (max-width: 500px){
     .contact{
         padding: 3.5rem 1rem;
     }
-
     .contact-content-container h2{
         font-size: 2rem;
     }
-
     .contact-form-container{
         padding: 2rem;
     }
-
     .contact-form-container form{
         grid-template-columns: 1fr;
     }
 }
 
-
-
-
 /* Footer Styles ************************************************************************** */
-
 .footer {
     background: #0f172a; /* dark professional */
     color: #e5e7eb;
     padding: 60px 20px 30px;
     text-align: center;
 }
-
 .footer h1 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 12px;
     color: #ffffff;
 }
-
 .footer p {
     max-width: 700px;
     margin: 0 auto 16px;
@@ -919,7 +733,6 @@ nav .menu-icon {
     line-height: 1.6;
     color: #cbd5f5;
 }
-
 .social-media-container {
     display: flex;
     justify-content: center;
@@ -927,7 +740,6 @@ nav .menu-icon {
     margin: 25px 0;
     flex-wrap: wrap;
 }
-
 .social-media-container img {
     width: 36px;
     height: 36px;
@@ -937,46 +749,44 @@ nav .menu-icon {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .social-media-container img:hover {
     background: #38bdf8;
     transform: translateY(-4px) scale(1.05);
 }
-
 .footer p:last-child {
     font-size: 0.85rem;
     color: #94a3b8;
     margin-top: 8px;
 }
-
 /* ---------- Responsive ---------- */
-
 @media (max-width: 768px) {
     .footer h1 {
         font-size: 1.6rem;
     }
-
     .footer p {
         font-size: 0.9rem;
         padding: 0 10px;
     }
-
     .social-media-container img {
         width: 32px;
         height: 32px;
     }
 }
-
 @media (max-width: 480px) {
     .footer {
         padding: 45px 15px 25px;
     }
-
     .footer h1 {
         font-size: 1.4rem;
     }
-
     .social-media-container {
         gap: 14px;
     }
+}
+
+
+
+.active{
+    background-color: #ea4a4a;
+    color: #ffffff;
 }
