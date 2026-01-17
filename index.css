@@ -15,18 +15,19 @@ body {
 #skills,
 #project,
 #service,
-#contact{
+#contact {
     scroll-margin-top: 80px;
 }
 
 /* Navigation Bar Styles ************************************************************************ */
-.navbar{
-    position:sticky;
+.navbar {
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,7 @@ nav .logo {
     align-items: center;
 
 }
+
 nav .logo .img {
     width: 50px;
     height: 50px;
@@ -65,6 +67,7 @@ nav .logo h1 {
     font-family: initial;
     cursor: pointer;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -74,9 +77,11 @@ nav ul {
     font-size: larger;
     padding-top: 0.4rem;
 }
+
 nav ul li {
     padding: 0.3rem;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #000000;
@@ -89,13 +94,15 @@ nav ul li a:hover {
     background-color: #ea4a4a;
     color: #ffffff;
 }
+
 nav .menu-icon {
     display: none;
     font-size: 28px;
     cursor: pointer;
     margin-left: auto;
 }
-.toggle-nav{
+
+.toggle-nav {
     display: none;
 }
 
@@ -104,6 +111,7 @@ nav .menu-icon {
     nav ul {
         gap: 0.5rem;
     }
+
     nav ul li {
         text-align: center;
         width: 100%;
@@ -116,24 +124,31 @@ nav .menu-icon {
         justify-content: space-between;
         align-items: center;
     }
+
     nav ul {
         display: none;
         flex-direction: column;
     }
+
     nav .menu-icon {
         display: block;
     }
-    .toggle-nav{
-        background-color: #ffffff;
+
+    .toggle-nav {
+        /* background-color: #ffffff; */
+        background: rgb(218, 224, 235);
+        /* dark blue */
         box-shadow: 0 2px 4px rgba(255, 3, 3, 0.1);
         border-radius: 5px;
         padding: 1rem;
         z-index: 1000;
         text-align: center;
     }
+
     .toggle-nav.active {
         display: block;
     }
+
     .toggle-nav ul {
         display: flex;
         flex-direction: column;
@@ -142,9 +157,11 @@ nav .menu-icon {
         font-weight: bolder;
         font-size: larger;
     }
+
     .toggle-nav ul li {
         padding: 0.3rem;
     }
+
     .toggle-nav ul li a {
         text-decoration: none;
         color: #000000;
@@ -152,45 +169,56 @@ nav .menu-icon {
         transition: background-color 0.3s, color 0.3s;
         padding: 1rem;
     }
+
+    .active {
+        background-color: #ea4a4a;
+        color: #ffffff;
+    }
 }
 
 /* Hero Section Styles ************************************************************************  */
 
-.home-main-box{
+.home-main-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
     background-color: #ffffff;
-    padding: 5rem 1rem  3rem;
-    /* esa margin padding laga o top me jis se home section nav bottom aaye nav ke nichu nhi by defalult  */    
+    padding: 5rem 1rem 3rem;
+    /* esa margin padding laga o top me jis se home section nav bottom aaye nav ke nichu nhi by defalult  */
 }
-.home-content-box{
+
+.home-content-box {
     flex: 2;
-    padding: 2rem;  
+    padding: 2rem;
 }
-.home-content-box .green-bol{
+
+.home-content-box .green-bol {
     width: 13px;
     height: 13px;
     background-color: green;
     display: inline-block;
     border-radius: 50%;
 }
-.home-content-box h1{
+
+.home-content-box h1 {
     font-size: 3rem;
     margin: 1rem 0;
 }
-.home-content-box h2{
+
+.home-content-box h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #555555;
 }
-.home-content-box p{
+
+.home-content-box p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #666666;
 }
-.home-content-box button{
+
+.home-content-box button {
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -202,52 +230,62 @@ nav .menu-icon {
     text-decoration: none;
     transition: background-color 0.3s;
 }
-.home-content-box button:hover{
+
+.home-content-box button:hover {
     background-color: #c43b3b;
     cursor: pointer;
 }
-.home-img-box{
+
+.home-img-box {
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-img-box img{
+
+.home-img-box img {
     width: 22rem;
     height: 30rem;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #ea4a4a;
 }
+
 /* responsive styles ................ */
 @media (max-width: 950px) {
-    .home-main-box{
+    .home-main-box {
         flex-direction: column;
         text-align: center;
         height: auto;
         padding: 2rem 1rem;
     }
-    .home-content-box{
+
+    .home-content-box {
         padding: 1rem;
     }
-    .home-content-box h1{
+
+    .home-content-box h1 {
         font-size: 2.5rem;
     }
-    .home-content-box p{
+
+    .home-content-box p {
         font-size: 1.5rem;
     }
 }
+
 /* About Section Styles ************************************************************************  */
-.about-section{
+.about-section {
     padding: 2rem 2rem;
     background-color: #ffffff;
     margin: 2rem 0rem;
 }
-.about-header{
+
+.about-header {
     text-align: center;
     margin-bottom: 4rem;
 }
-.about-header h1{
+
+.about-header h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     font-style: oblique;
@@ -255,59 +293,69 @@ nav .menu-icon {
     text-underline-offset: 10px;
     text-decoration-color: #ea4a4a;
     text-decoration-thickness: 5px;
-      padding: 1rem 0rem 2rem 2rem;
+    padding: 1rem 0rem 2rem 2rem;
 }
-.about-main{
+
+.about-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;  
+    gap: 4rem;
     /* flex-wrap: wrap; */
     padding: 0rem 1rem;
 }
-.about-img-box{
+
+.about-img-box {
     /* flex: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-img-box img{
+
+.about-img-box img {
     width: 20rem;
     height: auto;
     border-radius: 20%;
     object-fit: cover;
     border: 5px solid #f25454;
 }
-.about-main-content{
+
+.about-main-content {
     flex: 2;
     padding: 1rem;
 }
-.about-main-content h1{
+
+.about-main-content h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-.about-main-content p{
+
+.about-main-content p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #666666;
 }
-.about-per-info{
+
+.about-per-info {
     display: flex;
     justify-content: space-between;
     margin: 1.5rem 0;
     align-items: center;
     flex-wrap: wrap;
 }
-.info-main{
+
+.info-main {
     display: flex;
     flex-direction: column;
     align-items: start;
-   
+
 }
-#info{
+
+#info {
     text-align: start;
 }
-.about-per-info .arrow{
+
+.about-per-info .arrow {
     width: 8px;
     height: 8px;
     background-color: red;
@@ -316,112 +364,132 @@ nav .menu-icon {
     margin-right: 8px;
     margin-bottom: 0.2rem;
 }
-.span-bold{
+
+.span-bold {
     font-weight: bold;
 }
-.about-per-info .info{
-    padding: 0.5rem ;
+
+.about-per-info .info {
+    padding: 0.5rem;
     margin: 0.2rem;
 }
+
 /* Responsive Styles About section ........>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (max-width: 950px) {
-    .about-main{
+    .about-main {
         flex-direction: column;
         text-align: center;
     }
-    .about-img-box img{
+
+    .about-img-box img {
         width: 15rem;
         height: auto;
     }
-    .about-main-content h1{
+
+    .about-main-content h1 {
         font-size: 1.8rem;
     }
-    .about-main-content p{
+
+    .about-main-content p {
         font-size: 1.1rem;
     }
 }
+
 /* Skill section styles  */
 /* ===============================
    SKILLS – MODERN WHITE UI
    =============================== */
 .skills-section {
-  padding: 70px 20px;
-  background: #f9fafb;
-  color: #111827;
+    padding: 70px 20px;
+    background: #f9fafb;
+    color: #111827;
 }
+
 .skills-title {
-  text-align: center;
-  margin-top: 0;
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
 }
+
 .skills-container {
-  max-width: 900px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
 }
+
 .skill {
-  background: #ffffff;
-  padding: 22px 24px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    padding: 22px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .skill:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
+
 .skill span {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 15px;
-  margin-bottom: 10px;
-  color: #374151;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #374151;
 }
+
 .progress-bar {
-  width: 100%;
-  height: 10px;
-  background: #e5e7eb;
-  border-radius: 50px;
-  overflow: hidden;
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 50px;
+    overflow: hidden;
 }
-.skills-section h1{
-  font-size: 2.5rem; 
+
+.skills-section h1 {
+    font-size: 2.5rem;
 }
+
 .progress-bar div {
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #3b82f6, #22c55e);
-  transition: width 0.8s ease-in-out;
-  font-size: 0;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #3b82f6, #22c55e);
+    transition: width 0.8s ease-in-out;
+    font-size: 0;
 }
+
 @media (max-width: 768px) {
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-  .skills-title {
-    font-size: 26px;
-  }
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-title {
+        font-size: 26px;
+    }
 }
-.project .main-container{
+
+.project .main-container {
     padding: 3rem 1.5rem;
     background-color: #ffffff;
     margin: 3rem 0;
 }
+
 /* Heading */
-.project .main-container h1{
+.project .main-container h1 {
     text-align: center;
     padding-bottom: 1rem;
     font-size: 2.6rem;
     font-weight: 700;
     color: #222;
 }
-.project .main-container .heading-pera{
+
+.project .main-container .heading-pera {
     text-align: center;
     padding: 0 2rem 2.5rem;
     font-size: 1.1rem;
@@ -429,8 +497,9 @@ nav .menu-icon {
     /* max-width: 700px; */
     margin: auto;
 }
+
 /* Cards container */
-.project .cards-container{
+.project .cards-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -438,8 +507,9 @@ nav .menu-icon {
     flex-wrap: wrap;
     padding: 1rem;
 }
+
 /* Card */
-.project .cards-container .card{
+.project .cards-container .card {
     flex: 1;
     min-width: 260px;
     max-width: 340px;
@@ -451,40 +521,47 @@ nav .menu-icon {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.project .cards-container .card:hover{
+
+.project .cards-container .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
-.project .card{
+
+.project .card {
     padding: 1.2rem;
 }
+
 /* Image */
-.project .card .card-img img{
+.project .card .card-img img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
 }
+
 /* Title */
-.project .card h2{
+.project .card h2 {
     font-size: 1.4rem;
     margin-top: 1rem;
     color: #222;
 }
+
 /* Description */
-.project .card p{
+.project .card p {
     font-size: 0.95rem;
     color: #666;
     padding: 0.8rem 0 1.2rem;
     line-height: 1.6rem;
 }
+
 /* Buttons */
-.project .card .btns{
+.project .card .btns {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
-.project .card button{
+
+.project .card button {
     flex: 1;
     padding: 0.7rem 1rem;
     font-size: 1rem;
@@ -495,31 +572,36 @@ nav .menu-icon {
     border: none;
     transition: all 0.3s ease;
 }
-.project .card button:hover{
+
+.project .card button:hover {
     background: linear-gradient(135deg, #d93c3c, #ff5252);
     transform: scale(1.05);
 }
+
 /* Button link */
-.project .card button a{
+.project .card button a {
     text-decoration: none;
     color: #ffffff;
     display: block;
     text-align: center;
 }
+
 /* Services Section Styles */
-.service-main-container{
+.service-main-container {
     padding: 3rem 1.5rem;
     background-color: #ffffff;
     margin: 3rem 0;
 }
-.service-main-container h1{
+
+.service-main-container h1 {
     text-align: center;
     padding-bottom: 1rem;
     font-size: 2.6rem;
     font-weight: 700;
     color: #222;
 }
-.service-main-container .para{
+
+.service-main-container .para {
     text-align: center;
     padding: 0 2rem 2.5rem;
     font-size: 1.1rem;
@@ -527,7 +609,8 @@ nav .menu-icon {
     /* max-width: 700px; */
     margin: auto;
 }
-.service-card-container{
+
+.service-card-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -535,7 +618,8 @@ nav .menu-icon {
     flex-wrap: wrap;
     padding: 1rem;
 }
-.service-card-container .service-card{
+
+.service-card-container .service-card {
     flex: 1;
     min-width: 260px;
     max-width: 320px;
@@ -547,25 +631,29 @@ nav .menu-icon {
     transition: all 0.3s ease;
     cursor: pointer;
     text-align: center;
-    padding: 2rem 1.5rem;   
+    padding: 2rem 1.5rem;
 }
-.service-img-container{
+
+.service-img-container {
     text-align: center;
     margin-bottom: 1rem;
 }
-.service-card-container .service-card:hover{
+
+.service-card-container .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
     /* position: absolute; */
     /* z-index: 0; */
 }
+
 /* Contact Section Styles */
 /* ===== CONTACT SECTION ===== */
-.contact{
+.contact {
     padding: 5rem 1.5rem;
-    background: linear-gradient(135deg, #fdfbfb, #ebedee);   
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
 }
-.contact-main-container{
+
+.contact-main-container {
     max-width: 1200px;
     margin: auto;
     display: grid;
@@ -573,16 +661,18 @@ nav .menu-icon {
     gap: 3rem;
     align-items: center;
 }
+
 /* ===== LEFT CONTENT (INFO) ===== */
-.contact-content-container{
+.contact-content-container {
     padding: 3rem 2.5rem;
     background: linear-gradient(135deg, #ffffff, #f7f7f7);
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     position: relative;
     /* z-index: 1; */
 }
-.contact-content-container::before{
+
+.contact-content-container::before {
     content: "";
     position: absolute;
     top: 35px;
@@ -592,26 +682,30 @@ nav .menu-icon {
     background: linear-gradient(180deg, #ea4a4a, #ff6a6a);
     border-radius: 10px;
 }
-.contact-content-container h2{
+
+.contact-content-container h2 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #222;
     margin-bottom: 1.2rem;
 }
-.contact-content-container p{
+
+.contact-content-container p {
     font-size: 1.05rem;
     color: #555;
     line-height: 1.8;
     margin-bottom: 1.8rem;
 }
-.contact-details p{
+
+.contact-details p {
     font-size: 1rem;
     color: #333;
     margin-bottom: 0.8rem;
     padding-left: 1.8rem;
     position: relative;
 }
-.contact-details p::before{
+
+.contact-details p::before {
     content: "●";
     position: absolute;
     left: 0;
@@ -619,32 +713,36 @@ nav .menu-icon {
     font-size: 0.8rem;
     color: #ea4a4a;
 }
+
 /* ===== RIGHT FORM ===== */
-.contact-form-container{
+.contact-form-container {
     background: #ffffff;
     padding: 2.8rem;
     border-radius: 22px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
     position: relative;
     overflow: hidden;
 }
-.contact-form-container::before{
+
+.contact-form-container::before {
     content: "";
     position: absolute;
     top: -90px;
     right: -90px;
     width: 220px;
     height: 220px;
-    background: rgba(234,74,74,0.12);
+    background: rgba(234, 74, 74, 0.12);
     border-radius: 50%;
 }
-.contact-form-container form{
+
+.contact-form-container form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
 }
+
 .contact-form-container input,
-.contact-form-container textarea{
+.contact-form-container textarea {
     width: 100%;
     padding: 0.9rem 1rem;
     font-size: 0.95rem;
@@ -653,18 +751,21 @@ nav .menu-icon {
     background: #f9f9f9;
     transition: 0.3s ease;
 }
-.contact-form-container textarea{
+
+.contact-form-container textarea {
     grid-column: 1 / -1;
     resize: none;
 }
+
 .contact-form-container input:focus,
-.contact-form-container textarea:focus{
+.contact-form-container textarea:focus {
     outline: none;
     border-color: #ea4a4a;
     background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(234,74,74,0.15);
+    box-shadow: 0 0 0 3px rgba(234, 74, 74, 0.15);
 }
-.contact-form-container button{
+
+.contact-form-container button {
     grid-column: 1 / -1;
     padding: 1rem;
     background: linear-gradient(135deg, #ea4a4a, #ff6a6a);
@@ -676,56 +777,69 @@ nav .menu-icon {
     cursor: pointer;
     transition: all 0.35s ease;
 }
-.contact-form-container button:hover{
+
+.contact-form-container button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(234,74,74,0.35);
+    box-shadow: 0 15px 35px rgba(234, 74, 74, 0.35);
 }
+
 /* ===== RESPONSIVE ===== */
-@media (max-width: 900px){
-    .contact-main-container{
+@media (max-width: 900px) {
+    .contact-main-container {
         grid-template-columns: 1fr;
     }
-    .contact-content-container{
+
+    .contact-content-container {
         text-align: center;
     }
-    .contact-content-container::before{
+
+    .contact-content-container::before {
         display: none;
     }
-    .contact-details p{
+
+    .contact-details p {
         padding-left: 0;
     }
-    .contact-details p::before{
+
+    .contact-details p::before {
         display: none;
     }
 }
-@media (max-width: 500px){
-    .contact{
+
+@media (max-width: 500px) {
+    .contact {
         padding: 3.5rem 1rem;
     }
-    .contact-content-container h2{
+
+    .contact-content-container h2 {
         font-size: 2rem;
     }
-    .contact-form-container{
+
+    .contact-form-container {
         padding: 2rem;
     }
-    .contact-form-container form{
+
+    .contact-form-container form {
         grid-template-columns: 1fr;
     }
 }
 
 /* Footer Styles ************************************************************************** */
 .footer {
-    background: #0f172a; /* dark professional */
+    background: #0f172a;
+    /* dark professional */
     color: #e5e7eb;
     padding: 60px 20px 30px;
     text-align: center;
 }
+
 .footer h1 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 12px;
     color: #ffffff;
 }
+
 .footer p {
     max-width: 700px;
     margin: 0 auto 16px;
@@ -733,6 +847,7 @@ nav .menu-icon {
     line-height: 1.6;
     color: #cbd5f5;
 }
+
 .social-media-container {
     display: flex;
     justify-content: center;
@@ -740,6 +855,7 @@ nav .menu-icon {
     margin: 25px 0;
     flex-wrap: wrap;
 }
+
 .social-media-container img {
     width: 36px;
     height: 36px;
@@ -749,36 +865,44 @@ nav .menu-icon {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .social-media-container img:hover {
     background: #38bdf8;
     transform: translateY(-4px) scale(1.05);
 }
+
 .footer p:last-child {
     font-size: 0.85rem;
     color: #94a3b8;
     margin-top: 8px;
 }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
     .footer h1 {
         font-size: 1.6rem;
     }
+
     .footer p {
         font-size: 0.9rem;
         padding: 0 10px;
     }
+
     .social-media-container img {
         width: 32px;
         height: 32px;
     }
 }
+
 @media (max-width: 480px) {
     .footer {
         padding: 45px 15px 25px;
     }
+
     .footer h1 {
         font-size: 1.4rem;
     }
+
     .social-media-container {
         gap: 14px;
     }
@@ -786,7 +910,7 @@ nav .menu-icon {
 
 
 
-.active{
-    background-color: #ea4a4a;
-    color: #ffffff;
+.active {
+    background: rgb(218, 224, 235);
+    /* dark blue */
 }
