@@ -4,13 +4,13 @@ console.log("Jai Shree Ram")
 
 let button = document.querySelector(".menu-icon")
 let toggleNav = document.querySelector("#toggle-nav")
-console.log(button)
+// console.log(button)
 
 
 button.addEventListener("click", function(){
 	let ans = toggleNav.classList.toggle("active")
-    console.log("Jai Shree Ram");
-    console.log(ans);
+    // console.log("Jai Shree Ram");
+    // console.log(ans);
     
 });
 
@@ -20,8 +20,8 @@ button.addEventListener("click", function(){
 let nav = document.querySelectorAll("nav li a")
 let section = document.querySelectorAll("section")
 
-console.log(nav);
-console.log(section);
+// console.log(nav);
+// console.log(section);
 
 
 window.onscroll = () => {
@@ -54,6 +54,27 @@ ScrollReveal({
     duration: 2000,
     delay: 200
 });
+
+
+let mobileMenu = document.getElementsByClassName("mobile-menu")
+
+// console.log(mobileMenu);
+
+for (let index = 0; index < mobileMenu.length; index++) {
+    
+    console.log(mobileMenu[index]);
+
+    mobileMenu[index].addEventListener("click",()=>{
+        	let ans = toggleNav.classList.toggle("active")
+    })
+    
+    
+}
+
+
+
+
+
 
 
 
